@@ -16,8 +16,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
-            overflow: hidden;
             background-color: #000;
             position: relative;
         }
@@ -44,24 +44,45 @@
             }
         }
 
-        h1 {
-            font-size: 4em;
-            text-align: center;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-
         .countdown {
             text-align: center;
             font-size: 3em;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
 
         .logo {
             margin-top: 20px;
+            text-align: center;
         }
 
         .logo img {
             width: 300px;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .countdown {
+                font-size: 2em;
+            }
+
+            .logo img {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .countdown {
+                font-size: 1.5em;
+            }
+
+            .logo img {
+                width: 150px;
+            }
         }
     </style>
 </head>
