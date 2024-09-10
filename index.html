@@ -16,10 +16,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             height: 100vh;
             background-color: #000;
+            background-size: cover;
+            background-position: center;
             position: relative;
+            overflow: hidden;
+            text-align: center;
         }
 
         /* Spinning starry background */
@@ -27,8 +30,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 200%;
-            height: 200%;
+            width: 100vw;
+            height: 100vh;
             background: url('https://www.solarsystemscope.com/textures/download/2k_stars_milky_way.jpg') repeat;
             background-size: cover;
             z-index: -1;
@@ -45,7 +48,6 @@
         }
 
         .countdown {
-            text-align: center;
             font-size: 3em;
             margin-bottom: 20px;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
@@ -62,10 +64,6 @@
 
         /* Responsive design adjustments */
         @media (max-width: 768px) {
-            body {
-                padding: 20px;
-            }
-
             .countdown {
                 font-size: 2em;
             }
